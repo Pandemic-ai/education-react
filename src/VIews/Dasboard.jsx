@@ -1,10 +1,19 @@
 import React, { Component } from "react";
+import Admin from "./Admin";
+import Student from "./Student";
+import Teacher from "./Teacher";
 
 class Dashboard extends Component {
   render() {
     return (
       <div className="container">
-        <h1>Main Dashboard For Student Teacher Admin</h1>
+        {localStorage.getItem("Username") === "admin" ? (
+          <Admin />
+        ) : localStorage.getItem("Username") === "teacher" ? (
+          <Teacher />
+        ) : (
+          <Student />
+        )}
       </div>
     );
   }

@@ -13,6 +13,7 @@ class SideNav extends React.Component {
 
   onLogout() {
     localStorage.removeItem("Token");
+    localStorage.removeItem("Username");
     window.location.href = "/";
   }
 

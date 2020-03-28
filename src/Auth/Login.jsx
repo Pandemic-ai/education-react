@@ -57,6 +57,7 @@ class Login extends Component {
     this.setState({
       [event.target.name]: event.target.value
     });
+    localStorage.setItem("Username", this.state.username);
   }
 
   handleSubmit(e) {
@@ -64,7 +65,11 @@ class Login extends Component {
     e.preventDefault();
     const { username, password } = this.state;
 
-    if (username === "admin" && password === "admin") {
+    if (
+      (username === "admin@admin.com" && password === "admin") ||
+      (username === "student@student.com" && password === "student") ||
+      (username === "teacher@teacher.com" && password === "teacher")
+    ) {
       Swal.fire({
         title: "Login",
         icon: "success",
@@ -174,6 +179,19 @@ class Login extends Component {
             >
               LOGIN
             </button>
+
+            <p>
+              Admin :{" "}
+              <strong> email: "admin@admin.com" & password: "admin" </strong>{" "}
+              <br></br>
+              Student:{" "}
+              <strong>
+                email: "student@student.com" &&password: "student"{" "}
+              </strong>
+              <br></br>
+              Teacher:{" "}
+              <strong>email:"teacher@teacher.com" & password:"teacher"</strong>
+            </p>
           </form>
         </div>
       </div>
