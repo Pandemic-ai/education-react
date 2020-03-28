@@ -86,7 +86,7 @@ class Tutorial extends Component {
   //     console.log(this.state);
   //   };
 
-  handleSubmit(e) {
+  handleSubmit1(e) {
     e.preventDefault();
     Swal.fire({
       title: "Added",
@@ -115,6 +115,7 @@ class Tutorial extends Component {
         <div className=" login_demo1" style={{ Width: "500px" }}>
           <form
             className="tutorial login_demo1"
+            onSubmit={this.handleSubmit1.bind(this)}
             style={{ width: "750px", margin: "0 auto" }}
           >
             <h3 className="text-center">Add Tutorial</h3>
@@ -239,7 +240,6 @@ class Tutorial extends Component {
             <button
               type="submit"
               value="Login"
-              onClick={this.handleSubmit.bind(this)}
               className="btn btn-login btn-block text-white font-weight-bolder boxx "
               style={{
                 background: "rgba(183, 28, 28, 1)",

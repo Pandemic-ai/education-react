@@ -76,7 +76,7 @@ class SideNav extends React.Component {
           </p>
           <hr></hr>
 
-          <a href="# ">
+          <a href="/dashboard/">
             <span>
               <i className="fa fa-desktop"></i>{" "}
             </span>{" "}
