@@ -182,15 +182,13 @@ class Login extends Component {
 
             <p>
               Admin :{" "}
-              <strong> email: "admin@admin.com" & password: "admin" </strong>{" "}
+              <strong> email: "admin@admin.com" & pass: "admin" </strong>{" "}
               <br></br>
               Student:{" "}
-              <strong>
-                email: "student@student.com" &&password: "student"{" "}
-              </strong>
+              <strong>email: "student@student.com" & pass: "student" </strong>
               <br></br>
               Teacher:{" "}
-              <strong>email:"teacher@teacher.com" & password:"teacher"</strong>
+              <strong>email:"teacher@teacher.com" & pass:"teacher"</strong>
             </p>
           </form>
         </div>

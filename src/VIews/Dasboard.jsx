@@ -7,9 +7,9 @@ class Dashboard extends Component {
   render() {
     return (
       <div className="container">
-        {localStorage.getItem("Username") === "admin" ? (
+        {localStorage.getItem("Username") === "admin@admin.com" ? (
           <Admin />
-        ) : localStorage.getItem("Username") === "teacher" ? (
+        ) : localStorage.getItem("Username") === "teacher@teacher.com" ? (
           <Teacher />
         ) : (
           <Student />

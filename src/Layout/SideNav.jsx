@@ -72,7 +72,7 @@ class SideNav extends React.Component {
             className="navbar-brand text-dark text-capitalize "
             style={{ paddingLeft: "30px" }}
           >
-            USername
+            {localStorage.getItem("Username")}
           </p>
           <hr></hr>
           <a href="# ">
