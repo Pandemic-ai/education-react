@@ -1,0 +1,39 @@
+.container1 {
+  /* padding-left: 100px;
+  padding-right: 100px; */
+}
+
+.login_demo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-box-shadow: 6px 30px 30px rgba(129, 123, 123, 0.3);
+  -moz-box-shadow: 6px 30px 30px 9px rgba(129, 123, 123, 0.3);
+  box-shadow: 6px 30px 30px 9px rgba(129, 123, 123, 0.3);
+  padding: 60px;
+  border-radius: 10px;
+}
+.full {
+  float: right;
+  position: relative;
+  top: -40px;
+}
+.forget {
+  float: right;
+  margin-right: -30px;
+  font-size: 14px;
+}
+
+hr {
+  border-color: rgb(183, 28, 28, 0.2);
+  border-width: 2px;
+}
+.btn-login {
+  background-color: rgba(183, 28, 28, 1);
+  width: 100px;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  margin-top: 3px;
+}
