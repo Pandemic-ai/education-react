@@ -28,9 +28,9 @@ export class Admin extends Component {
                 </li>
                 <hr
                   style={{
-                    marginTop: "4px",
+                    marginTop: "7px",
                     borderWidth: "1px",
-                    marginBottom: "4px"
+                    marginBottom: "7px"
                   }}
                 ></hr>
                 <li>
@@ -38,9 +38,9 @@ export class Admin extends Component {
                 </li>{" "}
                 <hr
                   style={{
-                    marginTop: "4px",
+                    marginTop: "7px",
                     borderWidth: "1px",
-                    marginBottom: "4px"
+                    marginBottom: "7px"
                   }}
                 ></hr>
                 <li>
@@ -49,9 +49,9 @@ export class Admin extends Component {
                 </li>{" "}
                 <hr
                   style={{
-                    marginTop: "4px",
+                    marginTop: "7px",
                     borderWidth: "1px",
-                    marginBottom: "4px"
+                    marginBottom: "7px"
                   }}
                 ></hr>
                 <li>
@@ -59,9 +59,9 @@ export class Admin extends Component {
                 </li>{" "}
                 <hr
                   style={{
-                    marginTop: "4px",
+                    marginTop: "7px",
                     borderWidth: "1px",
-                    marginBottom: "4px"
+                    marginBottom: "7px"
                   }}
                 ></hr>
                 <li>
@@ -69,9 +69,9 @@ export class Admin extends Component {
                 </li>{" "}
                 <hr
                   style={{
-                    marginTop: "4px",
+                    marginTop: "7px",
                     borderWidth: "1px",
-                    marginBottom: "4px"
+                    marginBottom: "7px"
                   }}
                 ></hr>
                 <li>
@@ -79,9 +79,9 @@ export class Admin extends Component {
                 </li>{" "}
                 <hr
                   style={{
-                    marginTop: "4px",
+                    marginTop: "7px",
                     borderWidth: "1px",
-                    marginBottom: "4px"
+                    marginBottom: "7px"
                   }}
                 ></hr>
                 <li>
