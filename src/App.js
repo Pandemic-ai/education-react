@@ -17,6 +17,7 @@ import Notification from "./VIews/Admin/Notification";
 import Message from "./VIews/Admin/Message";
 import Notificationlist from "./VIews/Student/Notificationlist";
 import TeacherList from "./VIews/Student/TeacherList";
+import Upload from "./VIews/Teacher/Upload";
 
 import "./App.css";
 
@@ -63,6 +64,7 @@ class App extends Component {
               <PrivateRoute path="/chat/" component={Message} />
               <PrivateRoute path="/notification/" component={Notification} />
               <PrivateRoute path="/teacher/" component={TeacherList} />
+              <PrivateRoute path="/upload/" component={Upload} />
               <PrivateRoute
                 path="/studentnotification/"
                 component={Notificationlist}

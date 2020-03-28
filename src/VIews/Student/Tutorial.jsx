@@ -9,17 +9,34 @@ class Tutorial1 extends Component {
           <span style={{ float: "right" }}>
             <a
               href="/tutorial/"
-              className="text-white float-right"
+              className="text-white float-right font-weight-bold"
               style={{
                 background: "rgba(183, 28, 28, 1)",
                 padding: "10px",
                 fontSize: "12px",
                 width: "120px",
+                marginLeft: "10px",
                 boxShadow: "0px 8px 25px -7px #c0c0c0",
                 borderRadius: "4px"
               }}
             >
               Add Tutorial
+            </a>
+
+            <a
+              href="/upload/"
+              className="text-white float-right font-weight-bold"
+              style={{
+                background: "rgba(183, 28, 28, 1)",
+                padding: "10px",
+                fontSize: "12px",
+                width: "120px",
+
+                boxShadow: "0px 8px 25px -7px #c0c0c0",
+                borderRadius: "4px"
+              }}
+            >
+              Upload File
             </a>
           </span>
         </h2>
