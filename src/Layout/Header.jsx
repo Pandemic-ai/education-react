@@ -6,10 +6,16 @@ class Header extends Component {
   render() {
     return (
       <div className="">
-        <nav className="navbar navbar-expand-lg navbar-dark  fixed">
-          <a className="navbar-brand text-dark" href="/">
-            Webiste Logo
-          </a>
+        <nav className="navbar navbar-expand-lg navbar-dark  fixed bg-dark">
+          {localStorage.getItem("Token") ? (
+            <a className="navbar-brand text-dark" href="/dashboard/">
+              Webiste Logo
+            </a>
+          ) : (
+            <a className="navbar-brand text-dark" href="/">
+              Webiste Logo
+            </a>
+          )}
           <button
             className="navbar-toggler font-weight-bold text-white  "
             style={{ background: "#b71c1c", padding: "2px", width: "70px" }}
@@ -29,11 +35,11 @@ class Header extends Component {
             <ul className="navbar-nav ml-auto">
               <li className="nav-item  ">
                 <a
-                  className="nav-link btn contact_btn text-dark"
+                  className="nav-link btn contact_btn text-white"
                   href="#contactt"
                   rel="modal:open"
                 >
-                  Contact Us
+                  Welcome <strong>Admin</strong>
                 </a>
               </li>
               {localStorage.getItem("Token") ? (

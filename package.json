@@ -8,6 +8,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "@tinymce/tinymce-react": "^3.5.0",
     "apexcharts": "^3.17.0",
     "axios": "^0.19.2",
     "i18next": "^19.3.4",
@@ -25,7 +26,9 @@
     "react-leaflet": "^2.6.3",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.0.1",
+    "react-tinymce": "^0.7.0",
     "round-to": "^4.1.0",
+    "scrivito": "^1.11.0",
     "sweetalert2": "^9.10.7",
     "universal-cookie": "^4.0.3"
   },

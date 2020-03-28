@@ -7,13 +7,15 @@ class Dashboard extends Component {
   render() {
     return (
       <div className="container">
-        {localStorage.getItem("Username") === "admin@admin.com" ? (
+        {/* {localStorage.getItem("Username") === "admin@admin.com" ? (
           <Admin />
         ) : localStorage.getItem("Username") === "teacher@teacher.com" ? (
           <Teacher />
         ) : (
           <Student />
-        )}
+        )} */}
+
+        <Admin />
       </div>
     );
   }
