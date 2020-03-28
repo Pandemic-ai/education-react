@@ -25,28 +25,6 @@ class Tutorial extends Component {
     });
   };
 
-  async onChange(e, index) {
-    if (["firstName", "lastName"].includes(e.target.name)) {
-      let cats = [...this.state.inputFields];
-      cats[index][e.target.name] = e.target.value;
-      await this.setState({
-        cats
-      });
-    } else {
-      this.setState({ [e.target.name]: e.target.value.toUpperCase() });
-    }
-    console.log(this.state.inputFields);
-  }
-
-  //   onChange = (e) => {
-  //     const { name, value } = e.target;
-
-  //     this.setState(prevState => ({ inputFields: { ...prevState.inputFields, [name]: value } }));
-  //  }
-
-  // Then
-  // onChange={this.onChange}
-
   handleSubmit = e => {
     e.preventDefault();
     console.log("inputFields", this.state.inputFields);
@@ -80,11 +58,6 @@ class Tutorial extends Component {
     }
     console.log(this.state.inputFields);
   }
-
-  //   handleEditorChange = async content => {
-  //     await this.setState({ details: content });
-  //     console.log(this.state);
-  //   };
 
   handleSubmit1(e) {
     e.preventDefault();

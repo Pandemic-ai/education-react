@@ -80,20 +80,10 @@ class Tutorial1 extends Component {
                 </span>
               </p>
 
-              <button className="btn btn-info">
+              <a href="/second/tutorial/" className="btn btn-info">
                 {" "}
                 <i className="fa fa-eye text-white"></i> Read More
-              </button>
-              <button
-                className="btn btn-success text-white"
-                style={{ marginRight: "10px", marginLeft: "10px" }}
-              >
-                {" "}
-                <i className="fa fa-pencil text-white"></i> Edit
-              </button>
-              <button className="btn btn-danger text-white">
-                <i className="fa fa-trash text-white"></i> Delete
-              </button>
+              </a>
             </div>
           </div>
           <hr></hr>
@@ -139,20 +129,10 @@ class Tutorial1 extends Component {
                   <i className="fa fa-file"> Word file</i>
                 </span>
               </p>
-              <button className="btn btn-info">
+              <a href="/title/detail/" className="btn btn-info">
                 {" "}
                 <i className="fa fa-eye text-white"></i> Read More
-              </button>
-              <button
-                className="btn btn-success text-white"
-                style={{ marginRight: "10px", marginLeft: "10px" }}
-              >
-                {" "}
-                <i className="fa fa-pencil text-white"></i> Edit
-              </button>
-              <button className="btn btn-danger text-white">
-                <i className="fa fa-trash text-white"></i> Delete
-              </button>
+              </a>
             </div>
           </div>
 
@@ -195,20 +175,10 @@ class Tutorial1 extends Component {
                   <i className="fa fa-file"> Word Doc</i>
                 </span>
               </p>
-              <button className="btn btn-info">
+              <a href="/title/detail/" className="btn btn-info">
                 {" "}
                 <i className="fa fa-eye text-white"></i> Read More
-              </button>
-              <button
-                className="btn btn-success text-white"
-                style={{ marginRight: "10px", marginLeft: "10px" }}
-              >
-                {" "}
-                <i className="fa fa-pencil text-white"></i> Edit
-              </button>
-              <button className="btn btn-danger text-white">
-                <i className="fa fa-trash text-white"></i> Delete
-              </button>
+              </a>
             </div>
           </div>
 
@@ -240,7 +210,7 @@ class Tutorial1 extends Component {
                 </span>
                 &nbsp; &nbsp;
                 <span>
-                  <i className="fa fa-book"> Reading Tutorial</i>
+                  <i className="fa fa-book"> Reading Video Tutorial</i>
                 </span>
                 &nbsp; &nbsp;
                 <span>
@@ -251,20 +221,10 @@ class Tutorial1 extends Component {
                   <i className="fa fa-file"> Pdf Doc</i>
                 </span>
               </p>
-              <button className="btn btn-info">
+              <a href="/second/tutorial/" className="btn btn-info">
                 {" "}
                 <i className="fa fa-eye text-white"></i> Read More
-              </button>
-              <button
-                className="btn btn-success"
-                style={{ marginRight: "10px", marginLeft: "10px" }}
-              >
-                {" "}
-                <i className="fa fa-pencil text-white"></i> Edit
-              </button>
-              <button className="btn btn-danger text-white">
-                <i className="fa fa-trash text-white"></i> Delete
-              </button>
+              </a>
             </div>
           </div>
         </section>
@@ -279,7 +239,7 @@ class Tutorial1 extends Component {
                 <span class="page-link">Previous</span>
               </li>
               <li class="page-item active">
-                <a class="page-link" href="#">
+                <a class="page-link" href="# ">
                   1
                 </a>
               </li>
@@ -289,12 +249,12 @@ class Tutorial1 extends Component {
                 </span>
               </li>
               <li class="page-item">
-                <a class="page-link" href="#">
+                <a class="page-link" href="# ">
                   3
                 </a>
               </li>
               <li class="page-item">
-                <a class="page-link" href="#">
+                <a class="page-link" href="# ">
                   Next
                 </a>
               </li>

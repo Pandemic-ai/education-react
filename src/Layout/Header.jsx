@@ -1,8 +1,20 @@
 import React, { Component } from "react";
-import SideNav from "./SideNav";
+// import SideNav from "./SideNav";
 import "../index.css";
 
 class Header extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {};
+    this.onLogout = this.onLogout.bind(this);
+  }
+
+  onLogout() {
+    localStorage.removeItem("Token");
+    localStorage.removeItem("Username");
+    window.location.href = "/";
+  }
   render() {
     return (
       <div className="">
@@ -33,7 +45,7 @@ class Header extends Component {
             id="navbarSupportedContent"
           >
             <ul className="navbar-nav ml-auto">
-              {localStorage.getItem("Token") && (
+              {localStorage.getItem("Token") ? (
                 <li className="nav-item  ">
                   <a
                     className="nav-link btn contact_btn text-white"
@@ -43,25 +55,94 @@ class Header extends Component {
                     Welcome <strong>Admin</strong>
                   </a>
                 </li>
-              )}
-
-              {localStorage.getItem("Token") ? (
-                <li className="nav-item  ">
-                  <SideNav />
-                </li>
               ) : (
                 <li class="nav-item dropdown">
                   <a
                     className="nav-link btn btn-login contact_btn text-white"
-                    href="/login/"
+                    href="/"
                   >
                     Log in
                   </a>
                 </li>
               )}
+
+              {localStorage.getItem("Token") && (
+                <li class="nav-item dropdown">
+                  <a
+                    onClick={this.onLogout.bind(this)}
+                    className="nav-link btn btn-login contact_btn text-white"
+                    href="/login/"
+                  >
+                    Logout
+                  </a>
+                </li>
+              )}
+
+              {/* {localStorage.getItem("Token") ? (
+                <li className="nav-item  ">
+                  <SideNav />
+                </li>
+              ) : (
+                
+              )} */}
             </ul>
           </div>
         </nav>
+        {localStorage.getItem("Token") && (
+          <nav className="navbar navbar-expand-lg navbar-dark  fixed bg-dark">
+            <ul className="navbar-nav mr-auto" style={{ paddingLeft: "50px" }}>
+              <li className="nav-item  ">
+                <a
+                  className="nav-link btn contact_btn text-white font-weight-bold"
+                  href="/classmate/"
+                >
+                  Student
+                </a>
+              </li>
+              <li className="nav-item  ">
+                <a
+                  className="nav-link btn contact_btn text-white font-weight-bold"
+                  href="/teacher/"
+                >
+                  Teacher
+                </a>
+              </li>
+              <li className="nav-item  ">
+                <a
+                  className="nav-link btn contact_btn text-white font-weight-bold"
+                  href="/list/tutorial/"
+                >
+                  Lecture
+                </a>
+              </li>
+              <li className="nav-item  ">
+                <a
+                  className="nav-link btn contact_btn text-white font-weight-bold"
+                  href="/studentnotification/"
+                >
+                  Notification
+                </a>
+              </li>
+
+              <li className="nav-item  ">
+                <a
+                  className="nav-link btn contact_btn text-white font-weight-bold"
+                  href="/chat/"
+                >
+                  Chat
+                </a>
+              </li>
+              <li className="nav-item  ">
+                <a
+                  className="nav-link btn contact_btn text-white font-weight-bold"
+                  href="/note/"
+                >
+                  Notes
+                </a>
+              </li>
+            </ul>
+          </nav>
+        )}
       </div>
     );
   }

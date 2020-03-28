@@ -12,9 +12,9 @@ export class Admin extends Component {
             content="Login Page for student teacher adminstration"
           />
         </Helmet>
-        <div class="row jusrr">
+        <div class="row jusrr" style={{ marginTop: "80px" }}>
           <aside class="col-md-4  del">
-            <div class=" box_style_1 profile">
+            <div class=" box_style_ profile">
               <p class="text-center">
                 <img
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQZU0C_X-_BFvuc3MdB5Wb_K0V06Jl0d40BrIfvkf7zUG0J44Za"

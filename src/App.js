@@ -11,6 +11,7 @@ import Create from "./VIews/Student/Create";
 import ClassMate from "./VIews/Student/ClassMate";
 import Tutorial1 from "./VIews/Student/Tutorial";
 import TutorialDetails from "./VIews/Student/TutorialDetails";
+import Tutorial2 from "./VIews/Student/Tutorial2";
 import AddStudent from "./VIews/Admin/AddStudent";
 import AddTeacher from "./VIews/Admin/AddTeacher";
 import Notification from "./VIews/Admin/Notification";
@@ -50,7 +51,7 @@ class App extends Component {
             <Header loggedIn={localStorage.getItem("Token") != null} />
 
             <Switch>
-              <Route exact path="/" component={Main} />
+              <Route exact path="/" component={Login} />
               <Route path="/login/" component={Login} />
               <PrivateRoute path="/dashboard/" component={Dashboard} />
               <PrivateRoute path="/tutorial/" component={Tutorial} />
@@ -65,6 +66,7 @@ class App extends Component {
               <PrivateRoute path="/notification/" component={Notification} />
               <PrivateRoute path="/teacher/" component={TeacherList} />
               <PrivateRoute path="/upload/" component={Upload} />
+              <PrivateRoute path="/second/tutorial/" component={Tutorial2} />
               <PrivateRoute
                 path="/studentnotification/"
                 component={Notificationlist}

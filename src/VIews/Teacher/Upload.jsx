@@ -23,19 +23,6 @@ export class Upload extends Component {
     });
   };
 
-  async onChange(e, index) {
-    if (["firstName", "lastName"].includes(e.target.name)) {
-      let cats = [...this.state.inputFields];
-      cats[index][e.target.name] = e.target.value;
-      await this.setState({
-        cats
-      });
-    } else {
-      this.setState({ [e.target.name]: e.target.value.toUpperCase() });
-    }
-    console.log(this.state.inputFields);
-  }
-
   handleSubmit = e => {
     e.preventDefault();
     console.log("inputFields", this.state.inputFields);
@@ -85,7 +72,7 @@ export class Upload extends Component {
   render() {
     return (
       <div>
-        <div className="" style={{ Width: "550px" }}>
+        <div className="" style={{ Width: "550px", marginTop: "50px" }}>
           <form
             className="tutorial login_demo1"
             onSubmit={this.handleSubmit1.bind(this)}
@@ -94,7 +81,7 @@ export class Upload extends Component {
             <h3 className="text-center">Upload Study Material</h3>
             <hr></hr>
             <div className="form-group">
-              <label>Upload (Study Materia Pdf, Image, Video)</label>
+              <label>Add (Study Materia Pdf, Image, Video)</label>
               {this.state.inputFields.map((inputField, index) => (
                 <span className="" key={`${inputField}~${index}`}>
                   <div className="row">

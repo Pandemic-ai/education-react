@@ -21,7 +21,7 @@ export class AddStudent extends Component {
   }
   render() {
     return (
-      <div className="container">
+      <div className="container" style={{ marginTop: "30px" }}>
         <form
           style={{ margin: "0 auto", maxWidth: "700px" }}
           class="box11"

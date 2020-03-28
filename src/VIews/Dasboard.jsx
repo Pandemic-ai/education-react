@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Admin from "./Admin";
-import Student from "./Student";
-import Teacher from "./Teacher";
+// import Student from "./Student";
+// import Teacher from "./Teacher";
 
 class Dashboard extends Component {
   render() {

@@ -48,6 +48,12 @@
   padding: 2px;
   border-radius: 50%;
 }
+.ddd {
+  height: 50px;
+  border: 3px solid rgba(183, 28, 28, 1);
+  padding: 2px;
+  border-radius: 50%;
+}
 ul li {
   list-style: none;
 }
@@ -56,8 +62,9 @@ ul li {
   -webkit-box-shadow: 6px 30px 30px rgba(129, 123, 123, 0.3);
   -moz-box-shadow: 6px 30px 30px 9px rgba(129, 123, 123, 0.3);
   box-shadow: 6px 30px 30px 9px rgba(129, 123, 123, 0.3);
-  padding: 20px;
+  padding: 50px;
   border-radius: 6px;
+  margin-top: 50px;
 }
 
 .login_demo1 {
@@ -299,4 +306,81 @@ img {
 .msg_history {
   height: 100vh;
   overflow-y: auto;
+}
+
+#sub-header {
+  /* background-color: #05728f; */
+  background-color: #57dac4;
+  padding: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+.box_style_1 {
+  border: 1px solid gray;
+  padding: 25px;
+  border-radius: 5px;
+}
+.box_style_1 {
+  margin-top: 40px;
+}
+.list_1 li {
+  text-align: left;
+}
+.h1 {
+  text-transform: uppercase;
+  font-size: 55px;
+  font-weight: bolder;
+}
+.lead {
+  font-size: 25px;
+}
+.clearfix {
+  padding: 15px;
+  padding-bottom: 30px;
+}
+.rating_2,
+.fa {
+  font-size: 20px;
+  margin: 2px;
+}
+.box_style_1 h4 {
+  font-size: 18px;
+}
+.button_fullwidth-3 {
+  background: rgba(183, 28, 28, 0.2);
+  padding: 10px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: black;
+  font-size: 22px;
+  margin-bottom: -15px;
+}
+#main_content {
+  margin-top: 40px;
+}
+
+ul li {
+  display: inline;
+}
+.chapter_course,
+.strip_single_course {
+  border: 1px solid gray;
+}
+.chapter_course {
+  background: rgb(224, 223, 223);
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.strip_single_course h4 {
+  padding-left: 30px;
+  font-size: 19px;
+  padding-top: 15px;
+}
+a:hover {
+  text-decoration: none;
+}
+.strip_single_course a {
+  color: #0150a5;
 }
