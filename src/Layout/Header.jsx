@@ -8,11 +8,11 @@ class Header extends Component {
       <div className="">
         <nav className="navbar navbar-expand-lg navbar-dark  fixed bg-dark">
           {localStorage.getItem("Token") ? (
-            <a className="navbar-brand text-dark" href="/dashboard/">
+            <a className="navbar-brand text-white" href="/dashboard/">
               Webiste Logo
             </a>
           ) : (
-            <a className="navbar-brand text-dark" href="/">
+            <a className="navbar-brand text-white" href="/">
               Webiste Logo
             </a>
           )}
@@ -33,45 +33,24 @@ class Header extends Component {
             id="navbarSupportedContent"
           >
             <ul className="navbar-nav ml-auto">
-              <li className="nav-item  ">
-                <a
-                  className="nav-link btn contact_btn text-white"
-                  href="#contactt"
-                  rel="modal:open"
-                >
-                  Welcome <strong>Admin</strong>
-                </a>
-              </li>
+              {localStorage.getItem("Token") && (
+                <li className="nav-item  ">
+                  <a
+                    className="nav-link btn contact_btn text-white"
+                    href="#contactt"
+                    rel="modal:open"
+                  >
+                    Welcome <strong>Admin</strong>
+                  </a>
+                </li>
+              )}
+
               {localStorage.getItem("Token") ? (
                 <li className="nav-item  ">
                   <SideNav />
                 </li>
               ) : (
                 <li class="nav-item dropdown">
-                  {/* <a
-                          class="nav-link dropdown-toggle text-dark"
-                          href="#"
-                          id="navbarDropdown"
-                          role="button"
-                          data-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                        >
-                          Login
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="/login/">
-                            Student Login
-                          </a>
-                          <a class="dropdown-item" href="/login/">
-                            Teacher Login
-                          </a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="/login/">
-                            Admin
-                          </a>
-                        </div> */}
-
                   <a
                     className="nav-link btn btn-login contact_btn text-white"
                     href="/login/"

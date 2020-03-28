@@ -49,7 +49,7 @@ class SideNav extends React.Component {
   };
 
   render() {
-    const { showNav, status } = this.state;
+    const { showNav } = this.state;
     let navCoverStyle = { width: showNav ? "270px" : "0" };
     let sideNavStyle = { width: showNav ? "270px" : "0" };
 
@@ -83,124 +83,46 @@ class SideNav extends React.Component {
             &nbsp; &nbsp; Dashboard
           </a>
 
-          {localStorage.getItem("Username") === "student@student.com" ? (
-            <span>
-              <a href="classmate">
-                <span>
-                  <i className="fa fa-plus"></i>{" "}
-                </span>{" "}
-                &nbsp; &nbsp; View ClassMate
-              </a>
-              <a href="/note/">
-                <span>
-                  <i className="fa fa-eye"></i>{" "}
-                </span>{" "}
-                &nbsp; &nbsp; Notes
-              </a>
-              <a href="# ">
-                <span>
-                  <i className="fa fa-pencil"></i>{" "}
-                </span>{" "}
-                &nbsp; &nbsp; Tutorial
-              </a>
-              <a href="# ">
-                <span>
-                  <i className="fa fa-eye"></i>{" "}
-                </span>{" "}
-                &nbsp; &nbsp; Live Lecture
-              </a>
-              <a href="# ">
-                <span>
-                  <i className="fa fa-envelope"></i>{" "}
-                </span>{" "}
-                &nbsp; &nbsp; Message Room
-              </a>
-              <a href="# ">
-                <span>
-                  <i className="fa fa-envelope"></i>{" "}
-                </span>{" "}
-                &nbsp; &nbsp; Notification
-              </a>
-              <a href="# ">
-                <span>
-                  <i className="fa fa-envelope"></i>{" "}
-                </span>{" "}
-                &nbsp; &nbsp; Exams
-              </a>
+          <span>
+            <a href="/list/tutorial/">
+              <span>
+                <i className="fa fa-user"></i>{" "}
+              </span>{" "}
+              &nbsp; &nbsp;Lecture
+            </a>
+            <a href="/classmate/">
+              <span>
+                <i className="fa fa-user"></i>{" "}
+              </span>{" "}
+              &nbsp; &nbsp;Student
+            </a>
+            <a href="/teacher/">
+              <span>
+                <i className="fa fa-user"></i>{" "}
+              </span>{" "}
+              &nbsp; &nbsp; Teacher
+            </a>
+            <a href="/studentnotification/">
+              <span>
+                <i className="fa fa-bell"></i>{" "}
+              </span>{" "}
+              &nbsp; &nbsp; Notification
+            </a>
 
-              <a href="# ">
-                <span>
-                  <i className="fa fa-envelope"></i>{" "}
-                </span>{" "}
-                &nbsp; &nbsp; Report
-              </a>
-            </span>
-          ) : (
-            <span>
-              {localStorage.getItem("Username") === "admin@admin.com" ? (
-                <span>
-                  <a href="/list/tutorial/">
-                    <span>
-                      <i className="fa fa-user"></i>{" "}
-                    </span>{" "}
-                    &nbsp; &nbsp;Lecture
-                  </a>
-                  <a href="/classmate/">
-                    <span>
-                      <i className="fa fa-user"></i>{" "}
-                    </span>{" "}
-                    &nbsp; &nbsp;Student
-                  </a>
-                  <a href="/teacher/">
-                    <span>
-                      <i className="fa fa-user"></i>{" "}
-                    </span>{" "}
-                    &nbsp; &nbsp; Teacher
-                  </a>
-                  <a href="/studentnotification/">
-                    <span>
-                      <i className="fa fa-bell"></i>{" "}
-                    </span>{" "}
-                    &nbsp; &nbsp; Notification
-                  </a>
+            <a href="/chat/">
+              <span>
+                <i className="fa fa-envelope"></i>{" "}
+              </span>{" "}
+              &nbsp; &nbsp; Message
+            </a>
+            <a href="/note/">
+              <span>
+                <i className="fa fa-book"></i>{" "}
+              </span>{" "}
+              &nbsp; &nbsp; Notes
+            </a>
+          </span>
 
-                  <a href="/chat/">
-                    <span>
-                      <i className="fa fa-envelope"></i>{" "}
-                    </span>{" "}
-                    &nbsp; &nbsp; Message
-                  </a>
-                  <a href="/note/">
-                    <span>
-                      <i className="fa fa-book"></i>{" "}
-                    </span>{" "}
-                    &nbsp; &nbsp; Notes
-                  </a>
-                </span>
-              ) : (
-                <span>
-                  <a href="# ">
-                    <span>
-                      <i className="fa fa-plus"></i>{" "}
-                    </span>{" "}
-                    &nbsp; &nbsp; Add Student
-                  </a>
-                  <a href="/tutorial/">
-                    <span>
-                      <i className="fa fa-plus"></i>{" "}
-                    </span>{" "}
-                    &nbsp; &nbsp; Add Tutorial
-                  </a>
-                  <a href="# ">
-                    <span>
-                      <i className="fa fa-eye"></i>{" "}
-                    </span>{" "}
-                    &nbsp; &nbsp; View Student
-                  </a>
-                </span>
-              )}
-            </span>
-          )}
           <a
             className=" font-weight-bold "
             style={{ color: "white" }}
@@ -212,31 +134,6 @@ class SideNav extends React.Component {
             </span>{" "}
             &nbsp; &nbsp; Logout
           </a>
-
-          <div className="row">
-            <div className="col-sm-2">
-              {" "}
-              <a href=" " style={{ marginRight: "14px" }}>
-                <i className="fa fa-facebook"></i>
-              </a>
-            </div>
-            <div className="col-sm-2">
-              <a href=" " style={{ marginRight: "14px" }}>
-                <i className="fa fa-instagram"></i>
-              </a>
-            </div>
-            <div className="col-sm-2">
-              <a href=" " style={{ marginRight: "14px" }}>
-                <i className="fa fa-linkedin"></i>
-              </a>
-            </div>
-            <div className="col-sm-2">
-              {" "}
-              <a href=" ">
-                <i className="fa fa-youtube"></i>
-              </a>
-            </div>
-          </div>
         </div>
       </React.Fragment>
     );

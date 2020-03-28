@@ -38,8 +38,8 @@ class Login extends Component {
     super(props);
     this.state = {
       showPassword: false,
-      username: "",
-      password: ""
+      username: "admin@admin.com",
+      password: "admin"
     };
     this.handleClickShowPassword = this.handleClickShowPassword.bind(this);
     this.handleMouseDownPassword = this.handleMouseDownPassword.bind(this);
@@ -179,17 +179,6 @@ class Login extends Component {
             >
               LOGIN
             </button>
-
-            <p>
-              Admin :{" "}
-              <strong> email: "admin@admin.com" & pass: "admin" </strong>{" "}
-              <br></br>
-              Student:{" "}
-              <strong>email: "student@student.com" & pass: "student" </strong>
-              <br></br>
-              Teacher:{" "}
-              <strong>email:"teacher@teacher.com" & pass:"teacher"</strong>
-            </p>
           </form>
         </div>
       </div>

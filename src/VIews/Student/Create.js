@@ -9,7 +9,7 @@ export class Create extends Component {
             id="survey"
             style={{ padding: "50px 0", marginBottom: "-80px" }}
           >
-            <h2>Create a new notes</h2>
+            <h2>Create a new Notes</h2>
             <hr></hr>
             <div class="row">
               <div class="col-lg-3 col-md-6 mb-4">
