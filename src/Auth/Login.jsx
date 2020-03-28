@@ -78,8 +78,7 @@ class Login extends Component {
         timer: 3000
       });
       localStorage.setItem("Token", token);
-      this.props.history.push("/dashboard/");
-      window.location.reload(1);
+      this.redirect();
     } else {
       Swal.fire({
         title: "Login Error",
@@ -88,6 +87,17 @@ class Login extends Component {
         showConfirmButton: false,
         timer: 3000
       });
+    }
+  }
+
+  componentDidMount() {
+    this.redirect();
+  }
+
+  redirect() {
+    if (localStorage.getItem("Token")) {
+      this.props.history.push("/dashboard/");
+      window.location.reload();
     }
   }
 
