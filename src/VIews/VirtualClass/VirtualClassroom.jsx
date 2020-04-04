@@ -175,7 +175,7 @@ export class VirtualClass extends Component {
                   </h5>
                   <button
                     type="button"
-                    class="close text-white"
+                    class="close text-dark"
                     data-dismiss="modal"
                     aria-label="Close"
                   >
@@ -202,6 +202,15 @@ export class VirtualClass extends Component {
                         type="file"
                         placeholder="Upload Home work file"
                         required
+                        className="form-control"
+                      />
+                    </div>
+
+                    <div className="form-group">
+                      <label htmlFor="studen name">Comment</label>
+                      <input
+                        type="text"
+                        placeholder="Comment about your work"
                         className="form-control"
                       />
                     </div>
