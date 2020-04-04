@@ -406,3 +406,31 @@ a:hover {
 .strip_single_course a {
   color: #0150a5;
 }
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.col-md-6:hover .image {
+  opacity: 0.3;
+}
+
+.col-md-6:hover .middle {
+  opacity: 1;
+}
