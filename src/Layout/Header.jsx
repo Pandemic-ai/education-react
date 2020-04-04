@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 // import SideNav from "./SideNav";
 import "../index.css";
+import "./Header.css"
 import { BrowserRouter as Router, Link } from "react-router-dom";
 class Header extends Component {
   constructor(props) {
@@ -15,7 +16,7 @@ class Header extends Component {
     localStorage.removeItem("Username");
     window.location.href = "/";
   }
-  render() {
+  render() { 
     return (
       <div className="">
         <nav className="navbar navbar-expand-lg navbar-dark  fixed bg-dark">
@@ -93,6 +94,7 @@ class Header extends Component {
             <ul className="navbar-nav mr-auto" style={{ paddingLeft: "50px" }}>
               <li className="nav-item  ">
                 <Link
+                activeClassName="active"
                   className="nav-link btn contact_btn text-white font-weight-bold"
                   to="/classmate/"
                 >
@@ -101,6 +103,7 @@ class Header extends Component {
               </li>
               <li className="nav-item  ">
                 <Link
+                activeClassName="active"
                   className="nav-link btn contact_btn text-white font-weight-bold"
                   to="/teacher/"
                 >
@@ -109,6 +112,7 @@ class Header extends Component {
               </li>
               <li className="nav-item  ">
                 <Link
+                activeClassName="active"
                   className="nav-link btn contact_btn text-white font-weight-bold"
                   to="/list/tutorial/"
                 >
@@ -117,6 +121,7 @@ class Header extends Component {
               </li>
               <li>
                 <Link
+                activeClassName="active"
                   className="nav-link btn contact_btn text-white font-weight-bold"
                   to="/classroom/"
                 >
@@ -124,6 +129,7 @@ class Header extends Component {
                 </Link>
               </li>
               <Link 
+              activeClassName="active"
                 className="nav-link btn contact_btn text-white font-weight-bold" 
                 to="/list/exam/">
                 Exam
@@ -141,6 +147,7 @@ class Header extends Component {
 
               <li className="nav-item  ">
                 <Link
+                activeClassName="active"
                   className="nav-link btn contact_btn text-white font-weight-bold"
                   to="/studentnotification/"
                 >
@@ -150,6 +157,7 @@ class Header extends Component {
 
               <li className="nav-item  ">
                 <Link
+                activeClassName="active"
                   className="nav-link btn contact_btn text-white font-weight-bold"
                   to="/chat/"
                 >
@@ -158,6 +166,7 @@ class Header extends Component {
               </li>
               <li className="nav-item  ">
                 <Link
+                activeClassName="active"
                   className="nav-link btn contact_btn text-white font-weight-bold"
                   to="/note/"
                 >

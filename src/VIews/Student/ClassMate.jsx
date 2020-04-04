@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-
+import "./Student.css"
 export class ClassMate extends Component {
   render() {
     return (
       <div className="container" style={{ marginTop: "20px" }}>
+       <div className="notes p-5">
         <h4 className="text-left">
           Student List{" "}
           <a
@@ -96,6 +97,7 @@ export class ClassMate extends Component {
             </tr>
           </tbody>
         </table>
+        </div>
       </div>
     );
   }

@@ -1,16 +1,16 @@
 import React, { Component } from "react";
-
+import "./Student.css"
 export class TeacherList extends Component {
   render() {
     return (
       <div className="container" style={{ marginTop: "20px" }}>
+          <div className="notes p-5">
         <h4 className="text-left">
           Teacher List{" "}
           <a
             href="/addteacher/"
-            className="text-white float-right text-center font-weight-bolder"
+            className="text-white bg-success float-right text-center font-weight-bolder"
             style={{
-              background: "rgba(183, 28, 28, 1)",
               padding: "10px",
               fontSize: "12px",
               width: "150px",
@@ -97,6 +97,7 @@ export class TeacherList extends Component {
             </tr>
           </tbody>
         </table>
+        </div>
       </div>
     );
   }
