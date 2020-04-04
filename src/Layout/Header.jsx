@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 // import SideNav from "./SideNav";
 import "../index.css";
-
+import { BrowserRouter as Router,Link} from "react-router-dom";
 class Header extends Component {
   constructor(props) {
     super(props);
@@ -20,13 +20,19 @@ class Header extends Component {
       <div className="">
         <nav className="navbar navbar-expand-lg navbar-dark  fixed bg-dark">
           {localStorage.getItem("Token") ? (
-            <a className="navbar-brand text-white" href="/dashboard/">
-              Webiste Logo
-            </a>
+           
+            <Link 
+            className="navbar-brand text-white" 
+            to="/dashboard/">
+            Website logo
+          </Link>
           ) : (
-            <a className="navbar-brand text-white" href="/">
-              Webiste Logo
-            </a>
+         
+            <Link 
+            className="navbar-brand text-white" 
+            to="/">
+            Website logo
+          </Link>
           )}
           <button
             className="navbar-toggler font-weight-bold text-white  "
@@ -92,28 +98,35 @@ class Header extends Component {
           <nav className="navbar navbar-expand-lg navbar-dark  fixed bg-dark">
             <ul className="navbar-nav mr-auto" style={{ paddingLeft: "50px" }}>
               <li className="nav-item  ">
-                <a
-                  className="nav-link btn contact_btn text-white font-weight-bold"
-                  href="/classmate/"
-                >
-                  Student
-                </a>
+              <Link 
+                className="nav-link btn contact_btn text-white font-weight-bold" 
+                to="/classmate/">
+                Student
+              </Link>
+               
               </li>
               <li className="nav-item  ">
-                <a
-                  className="nav-link btn contact_btn text-white font-weight-bold"
-                  href="/teacher/"
-                >
-                  Teacher
-                </a>
+              <Link 
+                className="nav-link btn contact_btn text-white font-weight-bold" 
+                to="/teacher/">
+                Teacher
+              </Link>
+              
               </li>
               <li className="nav-item  ">
-                <a
+                <Link 
+                className="nav-link btn contact_btn text-white font-weight-bold" 
+                to="/list/tutorial/">
+                Lecture
+              </Link>
+               
+              </li>
+              <li>
+                <Link
                   className="nav-link btn contact_btn text-white font-weight-bold"
-                  href="/list/tutorial/"
-                >
-                  Lecture
-                </a>
+                  to="/classroom/">
+                  Class Room
+                </Link>
               </li>
 
               <li className="nav-item  ">
@@ -125,29 +138,29 @@ class Header extends Component {
                 </a>
               </li>
               <li className="nav-item  ">
-                <a
-                  className="nav-link btn contact_btn text-white font-weight-bold"
-                  href="/studentnotification/"
-                >
-                  Notification
-                </a>
+              <Link 
+                className="nav-link btn contact_btn text-white font-weight-bold" 
+                to="/studentnotification/">
+                Notification
+              </Link>
+                
               </li>
 
               <li className="nav-item  ">
-                <a
-                  className="nav-link btn contact_btn text-white font-weight-bold"
-                  href="/chat/"
-                >
-                  Chat
-                </a>
+              <Link 
+                className="nav-link btn contact_btn text-white font-weight-bold" 
+                to="/chat/">
+                Chat
+              </Link>
+              
               </li>
               <li className="nav-item  ">
-                <a
+              <Link 
                   className="nav-link btn contact_btn text-white font-weight-bold"
-                  href="/note/"
-                >
-                  Notes
-                </a>
+                  to="/note/">
+                  Note
+              </Link>
+               
               </li>
             </ul>
           </nav>
