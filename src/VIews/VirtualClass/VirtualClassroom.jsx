@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import TinyMCE from "react-tinymce";
+import Swal from "sweetalert2";
 
 // import ReactPaint from "react-paint";
 
@@ -18,6 +19,17 @@ export class VirtualClass extends Component {
       count: newCount
     });
   };
+
+  handlSubmit(e) {
+    e.preventDefault();
+    Swal.fire({
+      title: "Submitted",
+      icon: "success",
+      text: "You have successfully submitted your home work",
+      showConfirmButton: false,
+      timer: 3000
+    });
+  }
 
   render() {
     return (
@@ -129,11 +141,78 @@ export class VirtualClass extends Component {
             type="button"
             className="btn btn-primary float-right"
             data-toggle="modal"
+            data-target="#exampleModal11"
+            style={{ marginTop: "20px", width: "150px" }}
+          >
+            Upload Work
+          </button>
+
+          <button
+            type="button"
+            className="btn btn-primary float-right"
+            data-toggle="modal"
             data-target="#exampleModal"
-            style={{ marginTop: "20px", width: "100px" }}
+            style={{ marginTop: "20px", width: "100px", marginRight: "10px" }}
           >
             Chat
           </button>
+
+          {/* Chat Model Will br here */}
+
+          <div
+            class="modal fade "
+            id="exampleModal11"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered " role="document">
+              <div class="modal-content ">
+                <div class="modal-header">
+                  <h5 class="modal-title text-dark" id="exampleModalLabel">
+                    Upload Your Home Work
+                  </h5>
+                  <button
+                    type="button"
+                    class="close text-white"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden={true}>&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form onSubmit={this.handlSubmit.bind(this)}>
+                    <div className="form-group">
+                      <label htmlFor="studen name">Student Name</label>
+                      <input
+                        type="text"
+                        value="Student Name"
+                        disabled
+                        className="form-control"
+                      />
+                    </div>
+
+                    <div className="form-group">
+                      <label htmlFor="image">
+                        Upload Home Work(Pdf,Doc & image form)
+                      </label>
+                      <input
+                        type="file"
+                        placeholder="Upload Home work file"
+                        required
+                        className="form-control"
+                      />
+                    </div>
+                    <button className="btn btn-primary btn-block">
+                      SUBMIT WORK
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
 
           {/* Chat Model Will br here */}
 
