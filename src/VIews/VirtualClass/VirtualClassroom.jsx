@@ -48,10 +48,16 @@ export class VirtualClass extends Component {
                 selector: "textarea",
                 cleanup_on_startup: true,
                 custom_undo_redo_levels: 20,
+                external_plugins: {
+                  saveToPdf:
+                    "https://cdn.rawgit.com/Api2Pdf/api2pdf.tinymce/master/save-to-pdf/dist/save-to-pdf/plugin.js"
+                },
+                toolbar: "saveToPdf",
+                saveToPdfHandler: "/REPLACE-WITH-HANDLER-URL",
                 plugins:
                   "  autolink code link image lists print fullscreen   preview textcolor save media code  wordcount paste searchreplace insertdatetime media table directionality template charmap hr pagebreak anchor  advlist imagetools  textpattern noneditable charmap  emoticons ",
                 toolbar1:
-                  "codesample  preview bold italic underline codesample undo redo | fontselect fontsizeselect  formatselect   |  backcolor forecolor  | alignleft alignright | aligncenter alignjustify | indent outdent | bullist numlist table emoticons   |  paste save print  |   visualblocks visualchars |charmap hr pagebreak nonbreaking anchor |  textcolor fullscreen ",
+                  "codesample saveToPdf preview bold italic underline codesample undo redo fontselect fontsizeselect  |  formatselect   |  backcolor forecolor  | alignleft alignright | aligncenter alignjustify | indent outdent | bullist numlist table emoticons   |  save print  |   visualblocks visualchars |charmap hr pagebreak nonbreaking anchor |  textcolor fullscreen ",
                 content_css:
                   "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css",
                 codesample_content_css:

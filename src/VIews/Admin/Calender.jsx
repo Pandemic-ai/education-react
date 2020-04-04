@@ -1,19 +1,6 @@
 import React, { Component } from "react";
-import Calendar from "react_google_calendar";
-
-const calendar_configuration = {
-  api_key: "AIzaSyAOuDzSlG24RPBn3OKVAyjW3OK_EJhCUbp",
-  calendars: [
-    {
-      name: "AIzaSyAOuDzSlG24RPBn3OKVAyjW3OK_EJhCUbp",
-      url:
-        "https://www.googleapis.com/calendar/v3/calendars/tb8ckdrm61bdsj6jfm7khob4u5@group.calendar.google.com/events?key=AIzaSyAOuDzSlG24RPBn3OKVAyjW3OK_EJhCUbp"
-    }
-  ],
-  dailyRecurrence: 700,
-  weeklyRecurrence: 500,
-  monthlyRecurrence: 20
-};
+import PropTypes from "prop-types";
+const EventCalendar = require("react-event-calendar");
 
 class Calender extends Component {
   constructor(props) {
@@ -24,12 +11,37 @@ class Calender extends Component {
   }
 
   render() {
+    const events = [
+      {
+        start: "2015-07-20",
+        end: "2015-07-02",
+        eventClasses: "optionalEvent",
+        title: "test event",
+        description: "This is a test description of an event"
+      },
+      {
+        start: "2015-07-19",
+        end: "2015-07-25",
+        title: "test event",
+        description: "This is a test description of an event",
+        data: "you can add what ever random data you may want to use later"
+      }
+    ];
     return (
       <div>
-        <Calendar events={this.state.events} config={calendar_configuration} />
+        <EventCalendar
+          month={7}
+          year={2015}
+          events={events}
+          onEventClick={(target, eventData, day) => console.log(eventData)}
+        />
       </div>
     );
   }
 }
+
+Calender.propTypes = {
+  test: PropTypes.string
+};
 
 export default Calender;
