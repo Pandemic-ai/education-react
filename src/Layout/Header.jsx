@@ -128,15 +128,13 @@ class Header extends Component {
                   Class Room
                 </Link>
               </li>
+              <Link 
+                className="nav-link btn contact_btn text-white font-weight-bold" 
+                to="/list/exam/">
+                Exam
+              </Link>
 
-              <li className="nav-item  ">
-                <a
-                  className="nav-link btn contact_btn text-white font-weight-bold"
-                  href="/list/exam/"
-                >
-                  Exam
-                </a>
-              </li>
+            
               <li className="nav-item  ">
               <Link 
                 className="nav-link btn contact_btn text-white font-weight-bold" 
