@@ -20,6 +20,9 @@ import Notificationlist from "./VIews/Student/Notificationlist";
 import TeacherList from "./VIews/Student/TeacherList";
 import Upload from "./VIews/Teacher/Upload";
 import Notfound from "./VIews/Notfound";
+import Results from "./VIews/Exam/Results";
+import Question from "./VIews/Exam/Question";
+import ExamList from "./VIews/Exam/ExamList";
 // import Calender from "./VIews/Admin/Calender";
 
 import "./App.css";
@@ -50,7 +53,11 @@ class App extends Component {
       <div>
         <Suspense fallback="loading">
           <BrowserRouter>
-            <Header loggedIn={localStorage.getItem("Token") != null} />
+            {localStorage.getItem("Exam") ? (
+              " "
+            ) : (
+              <Header loggedIn={localStorage.getItem("Token") != null} />
+            )}
 
             <Switch>
               <Route exact path="/" component={Login} />
@@ -69,7 +76,11 @@ class App extends Component {
               <PrivateRoute path="/teacher/" component={TeacherList} />
               <PrivateRoute path="/upload/" component={Upload} />
               <PrivateRoute path="/second/tutorial/" component={Tutorial2} />
+              <PrivateRoute path="/result/" component={Results} />
+              <PrivateRoute path="/exam/question/" component={Question} />
+              <PrivateRoute path="/list/exam/" component={ExamList} />
               <PrivateRoute path="*" component={Notfound} />
+
               {/* <PrivateRoute path="/calender/" component={Calender} /> */}
               <PrivateRoute
                 path="/studentnotification/"

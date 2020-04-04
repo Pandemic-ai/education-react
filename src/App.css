@@ -15,6 +15,28 @@
   border-radius: 10px;
 }
 
+.questiontext {
+  -webkit-user-select: none !important;
+  -moz-user-select: -moz-none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+.heee1 {
+  -webkit-user-select: none !important;
+  -moz-user-select: -moz-none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+.quiz_time {
+  padding: 50px;
+  -webkit-box-shadow: 6px 30px 30px rgba(129, 123, 123, 0.3);
+  -moz-box-shadow: 6px 30px 30px 9px rgba(129, 123, 123, 0.3);
+  box-shadow: 6px 30px 30px 9px rgba(129, 123, 123, 0.3);
+  border-radius: 8px;
+  margin-top: 20px;
+  height: 100vh;
+  overflow: scroll;
+}
 .jusrr {
   position: absolute;
   left: 50%;
