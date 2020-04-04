@@ -122,6 +122,7 @@ export class AddTeacher extends Component {
                     </span>
                   </div>
                   <input
+                    chooseType=""
                     type="text"
                     name="name"
                     class="form-control"

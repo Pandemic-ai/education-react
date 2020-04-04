@@ -8,9 +8,8 @@ export class ClassMate extends Component {
           Student List{" "}
           <a
             href="/addstudent/"
-            className="text-white float-right text-center font-weight-bolder"
+            className="bg-success text-white float-right text-center font-weight-bolder"
             style={{
-              background: "rgba(183, 28, 28, 1)",
               padding: "10px",
               fontSize: "12px",
               width: "150px",
@@ -18,7 +17,7 @@ export class ClassMate extends Component {
               borderRadius: "4px"
             }}
           >
-            Add Student
+          + {" "}  Add Student
           </a>
         </h4>
         <hr></hr>

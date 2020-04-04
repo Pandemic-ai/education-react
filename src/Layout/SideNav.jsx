@@ -118,7 +118,7 @@ class SideNav extends React.Component {
             <a href="/note/">
               <span>
                 <i className="fa fa-book"></i>{" "}
-              </span>{" "}
+              </span>{" "}  
               &nbsp; &nbsp; Notes
             </a>
           </span>

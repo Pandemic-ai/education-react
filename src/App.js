@@ -23,6 +23,7 @@ import Notfound from "./VIews/Notfound";
 // import Calender from "./VIews/Admin/Calender";
 
 import "./App.css";
+import VirtualClass from "./VIews/VirtualClass/VirtualClassroom";
 
 const PrivateRoute = ({ component: Component, ...props }) => {
   return (
@@ -67,6 +68,7 @@ class App extends Component {
               <PrivateRoute path="/chat/" component={Message} />
               <PrivateRoute path="/notification/" component={Notification} />
               <PrivateRoute path="/teacher/" component={TeacherList} />
+              <PrivateRoute path="/classroom/" component={VirtualClass} />
               <PrivateRoute path="/upload/" component={Upload} />
               <PrivateRoute path="/second/tutorial/" component={Tutorial2} />
               <PrivateRoute path="*" component={Notfound} />
