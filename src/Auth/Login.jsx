@@ -96,7 +96,7 @@ class Login extends Component {
 
   redirect() {
     if (localStorage.getItem("Token")) {
-      this.props.history.push("/dashboard/");
+      this.props.history.push("https://onestopsolution.herokuapp.com/");
       window.location.reload();
     }
   }

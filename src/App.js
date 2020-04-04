@@ -19,6 +19,7 @@ import Message from "./VIews/Admin/Message";
 import Notificationlist from "./VIews/Student/Notificationlist";
 import TeacherList from "./VIews/Student/TeacherList";
 import Upload from "./VIews/Teacher/Upload";
+import Calender from "./VIews/Admin/Calender";
 
 import "./App.css";
 
@@ -48,7 +49,7 @@ class App extends Component {
       <div>
         <Suspense fallback="loading">
           <BrowserRouter>
-            <Header loggedIn={localStorage.getItem("Token") != null} />
+            {/* <Header loggedIn={localStorage.getItem("Token") != null} /> */}
 
             <Switch>
               <Route exact path="/" component={Login} />
@@ -67,6 +68,7 @@ class App extends Component {
               <PrivateRoute path="/teacher/" component={TeacherList} />
               <PrivateRoute path="/upload/" component={Upload} />
               <PrivateRoute path="/second/tutorial/" component={Tutorial2} />
+              <PrivateRoute path="/calender/" component={Calender} />
               <PrivateRoute
                 path="/studentnotification/"
                 component={Notificationlist}
