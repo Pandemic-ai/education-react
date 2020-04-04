@@ -9,9 +9,8 @@ class Tutorial1 extends Component {
           <span style={{ float: "right" }}>
             <a
               href="/tutorial/"
-              className="text-white float-right font-weight-bold"
+              className="text-white bg-success float-right font-weight-bold"
               style={{
-                background: "rgba(183, 28, 28, 1)",
                 padding: "10px",
                 fontSize: "12px",
                 width: "120px",
@@ -25,9 +24,8 @@ class Tutorial1 extends Component {
 
             <a
               href="/upload/"
-              className="text-white float-right font-weight-bold"
+              className="text-white bg-success float-right font-weight-bold"
               style={{
-                background: "rgba(183, 28, 28, 1)",
                 padding: "10px",
                 fontSize: "12px",
                 width: "120px",

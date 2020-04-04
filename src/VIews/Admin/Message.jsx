@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Message extends Component {
   render() {
     return (
-      <div class="containerr">
+      <div class="container-fluid mt-4" >
         <h3 class=" text-center">Messaging</h3>
         <div class="messaging">
           <div class="inbox_msg">

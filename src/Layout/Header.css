@@ -1,0 +1,5 @@
+.nav-item .navbar-nav .navbar-expand-lg .active {
+    background-color:red;
+    color:Black ;
+    font-weight:bold;
+ }

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import "./Exam.css"
 export class ExamList extends Component {
   handleSubmit(e) {
     const exam = "i am rahul raj";
@@ -11,8 +11,8 @@ export class ExamList extends Component {
   render() {
     return (
       <div className="container" style={{ marginTop: "30px" }}>
-        <div
-          className="question_list"
+        <div 
+          className="question_list instructions-exam p-5"
           style={{ margin: "0 auto", maxWidth: "800px" }}
         >
           <h3>Instruction</h3>
@@ -65,7 +65,7 @@ export class ExamList extends Component {
                   <td style={{ paddingTop: "20px" }}>06-04-2020</td>
                   <td>
                     <button
-                      className="btn btn-info"
+                      className="btn btn-info bg-success"
                       style={{ padding: "5px", width: "150px" }}
                     >
                       {" "}
@@ -90,7 +90,7 @@ export class ExamList extends Component {
                   <td style={{ paddingTop: "20px" }}>09-04-2020</td>
                   <td>
                     <button
-                      className="btn btn-info"
+                      className="btn btn-info bg-success"
                       style={{ padding: "5px", width: "150px" }}
                     >
                       {" "}
@@ -126,7 +126,7 @@ export class ExamList extends Component {
               </div>
 
               <button
-                className="btn btn-info"
+                className="btn btn-info bg-success"
                 style={{ width: "200px", marginTop: "20px" }}
               >
                 START TEST
