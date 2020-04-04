@@ -81,13 +81,13 @@ class App extends Component {
               <PrivateRoute path="/result/" component={Results} />
               <PrivateRoute path="/exam/question/" component={Question} />
               <PrivateRoute path="/list/exam/" component={ExamList} />
-              <PrivateRoute path="*" component={Notfound} />
-
-              {/* <PrivateRoute path="/calender/" component={Calender} /> */}
               <PrivateRoute
                 path="/studentnotification/"
                 component={Notificationlist}
               />
+              <PrivateRoute path="*" component={Notfound} />
+
+              {/* <PrivateRoute path="/calender/" component={Calender} /> */}
             </Switch>
           </BrowserRouter>
         </Suspense>

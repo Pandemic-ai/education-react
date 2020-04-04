@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import TinyMCE from "react-tinymce";
 import Swal from "sweetalert2";
-import "./Student.css"
+import "./Student.css";
 export class Note extends Component {
   constructor(props) {
     super(props);
@@ -22,20 +22,18 @@ export class Note extends Component {
   }
   render() {
     return (
-      <div className="note "  style={{ marginTop: "-20px" }}>
+      <div className="note " style={{ marginTop: "-20px" }}>
         <div className="mt-4 notes p-5">
           <h3>
             <span>
               <input
-              className="text-center"
+                className="text-center"
                 type="text"
                 defaultValue="Create a Title"
                 name="title"
                 style={{ marginTop: "2px" }}
               />
             </span>
-
-           
           </h3>
           <hr></hr>
           <div className="word_editor">
@@ -84,28 +82,26 @@ export class Note extends Component {
                   onChange={this.handleEditorChange}
                 />
                 <span className="float-right mt-2">
-              <button
-                type="submit"
-                onClick={this.handleSubmit.bind(this)}
-                className="btn btn-login text-white bg-success font-weight-bolder boxx "
-                style={{
-                  padding: "10px",
-                  fontSize: "12px",
-                  width: "120px",
-                  boxShadow: "0px 8px 25px -7px #c0c0c0",
-                  borderRadius: "4px"
-                }}
-              >
-                Save Note
-              </button>
-            </span>
+                  <button
+                    type="submit"
+                    onClick={this.handleSubmit.bind(this)}
+                    className="btn btn-login text-white bg-success font-weight-bolder boxx "
+                    style={{
+                      padding: "10px",
+                      fontSize: "12px",
+                      width: "120px",
+                      boxShadow: "0px 8px 25px -7px #c0c0c0",
+                      borderRadius: "4px"
+                    }}
+                  >
+                    Save Note
+                  </button>
+                </span>
               </div>
             </form>
           </div>
         </div>
-        
       </div>
-      
     );
   }
 }
