@@ -205,6 +205,15 @@ export class VirtualClass extends Component {
                         className="form-control"
                       />
                     </div>
+
+                    <div className="form-group">
+                      <label htmlFor="studen name">Comment</label>
+                      <input
+                        type="text"
+                        placeholder="Comment about your work"
+                        className="form-control"
+                      />
+                    </div>
                     <button className="btn btn-primary btn-block">
                       SUBMIT WORK
                     </button>
