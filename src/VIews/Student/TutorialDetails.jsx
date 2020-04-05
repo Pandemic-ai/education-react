@@ -70,7 +70,9 @@ export class TutorialDetails extends Component {
               <div class="col-md-8" style={{ marginTop: "0px" }}>
                 <Iframe
                   url="http://www.youtube.com/embed/pgk-719mTxM?wmode=transparent"
-                  style={{ border: "0", width: "100%", height: "400px" }}
+                  // style={{ border: "0", width: "100%", height: "400px" }}
+                  width="100%"
+                  height="400px"
                   class="video_course"
                   title="Tutorial Video"
                 ></Iframe>
