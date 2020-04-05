@@ -10,9 +10,8 @@ export class Notificationlist extends Component {
           <span style={{ float: "right" }}>
             <a
               href="/notification/"
-              className="text-white float-right text-center font-weight-bolder"
+              className="text-white float-right bg-success text-center font-weight-bolder"
               style={{
-                background: "rgba(183, 28, 28, 1)",
                 padding: "10px",
                 fontSize: "12px",
                 width: "150px",
@@ -41,8 +40,8 @@ export class Notificationlist extends Component {
               </td>
               <td> Teacher</td>
               <td>
-                <button className="btn btn-danger" style={{ padding: "5px" }}>
-                  <i className="fa fa-trash text-white"></i> Delete
+                <button className="btn" style={{ padding: "5px" }}>
+                  <i className="fa fa-trash text-dark"></i>
                 </button>
               </td>
             </tr>
@@ -53,8 +52,8 @@ export class Notificationlist extends Component {
               </td>
               <td> Student</td>
               <td>
-                <button className="btn btn-danger" style={{ padding: "5px" }}>
-                  <i className="fa fa-trash text-white"></i> Delete
+                <button className="btn " style={{ padding: "5px" }}>
+                  <i className="fa fa-trash text-dark"></i>
                 </button>
               </td>
             </tr>
@@ -66,8 +65,8 @@ export class Notificationlist extends Component {
               </td>
               <td> All(Teacher, Student)</td>
               <td>
-                <button className="btn btn-danger" style={{ padding: "5px" }}>
-                  <i className="fa fa-trash text-white"></i> Delete
+                <button className="btn " style={{ padding: "5px" }}>
+                  <i className="fa fa-trash text-dark"></i>
                 </button>
               </td>
             </tr>

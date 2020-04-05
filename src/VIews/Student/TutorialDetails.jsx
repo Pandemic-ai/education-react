@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Iframe from "react-iframe";
 
 export class TutorialDetails extends Component {
   render() {
@@ -67,12 +68,12 @@ export class TutorialDetails extends Component {
           <div class="container">
             <div class="row">
               <div class="col-md-8" style={{ marginTop: "0px" }}>
-                <iframe
-                  src="http://www.youtube.com/embed/pgk-719mTxM?wmode=transparent"
+                <Iframe
+                  url="http://www.youtube.com/embed/pgk-719mTxM?wmode=transparent"
                   style={{ border: "0", width: "100%", height: "400px" }}
                   class="video_course"
                   title="Tutorial Video"
-                ></iframe>
+                ></Iframe>
                 <h3>Simply dummy text</h3>
                 <p>
                   {" "}

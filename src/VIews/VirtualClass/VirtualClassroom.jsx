@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import TinyMCE from "react-tinymce";
 import Swal from "sweetalert2";
+import Iframe from "react-iframe";
 
 // import ReactPaint from "react-paint";
 
@@ -121,12 +122,14 @@ export class VirtualClass extends Component {
         <div className="mt-2 col-md-7">
           <h4> Live Session By Teacher Name </h4>
           <hr></hr>
-          <iframe
-            src="http://www.youtube.com/embed/pgk-719mTxM?wmode=transparent"
+          <Iframe
+            url="http://www.youtube.com/embed/pgk-719mTxM?wmode=transparent"
             style={{ border: "0", width: "100%", height: "70vh" }}
+            width="100%"
+            height="450px"
             class="video_course"
             title="Tutorial Video"
-          ></iframe>
+          ></Iframe>
 
           <button
             className="btn "
